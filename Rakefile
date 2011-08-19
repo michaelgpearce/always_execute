@@ -12,11 +12,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "shared_should"
-  gem.homepage = "http://github.com/michaelgpearce/shared_should"
+  gem.name = "always_execute"
+  gem.homepage = "http://github.com/michaelgpearce/always_execute"
   gem.license = "MIT"
-  gem.summary = %Q{Share and reuse shoulds, contexts, and setup in Shoulda.}
-  gem.description = %Q{Share and reuse shoulds, contexts, and setup in Shoulda.}
+  gem.summary = %Q{Adds execute and expect test blocks for added BDD test clarity.}
+  gem.description = %Q{Adds execute and expect test blocks for added BDD test clarity.}
   gem.email = "michael.pearce@bookrenter.com"
   gem.authors = ["Michael Pearce"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "shared_should #{version}"
+  rdoc.title = "always_execute #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{always_execute}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Pearce"]
-  s.date = %q{2011-08-19}
+  s.date = %q{2011-08-22}
   s.description = %q{Adds execute and expect test blocks for added BDD test clarity.}
   s.email = %q{michael.pearce@bookrenter.com}
   s.extra_rdoc_files = [
@@ -29,8 +29,8 @@ Gem::Specification.new do |s|
     "lib/shoulda_execute.rb",
     "lib/shoulda_expects.rb",
     "test/helper.rb",
-    "test/test_shoulda_execute.rb",
-    "test/test_shoulda_expects.rb"
+    "test/shoulda_execute_test.rb",
+    "test/shoulda_expects_test.rb"
   ]
   s.homepage = %q{http://github.com/michaelgpearce/always_execute}
   s.licenses = ["MIT"]
@@ -39,8 +39,8 @@ Gem::Specification.new do |s|
   s.summary = %q{Adds execute and expect test blocks for added BDD test clarity.}
   s.test_files = [
     "test/helper.rb",
-    "test/test_shoulda_execute.rb",
-    "test/test_shoulda_expects.rb"
+    "test/shoulda_execute_test.rb",
+    "test/shoulda_expects_test.rb"
   ]
 
   if s.respond_to? :specification_version then

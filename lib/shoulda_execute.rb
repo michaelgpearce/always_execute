@@ -30,7 +30,6 @@ class Shoulda::Context
   
   def self.should_execute_shared_should_available?
     Test::Unit::TestCase.respond_to? :share_context
-    true
   end
 end
 

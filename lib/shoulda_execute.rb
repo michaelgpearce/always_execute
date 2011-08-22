@@ -13,7 +13,6 @@ class Shoulda::Context
     else
       should_without_execute(name, options) do
         if @execute_block
-          puts self
           self.instance_variable_set('@execute_result', Shoulda::Context.shoulda_execute_call_block(self, @execute_block))
         end
         Shoulda::Context.shoulda_execute_call_block(self, block)

@@ -1,6 +1,6 @@
 require "helper"
 
-class TestShouldaExecute < Test::Unit::TestCase
+class ShouldaExecuteTest < Test::Unit::TestCase  
   context ".execute" do
     context "with execute_result on execute" do
       execute do
@@ -9,7 +9,7 @@ class TestShouldaExecute < Test::Unit::TestCase
       
       context "with shared_should library" do
         setup do
-          assert TestShouldaExecute.respond_to? :share_should
+          assert ShouldaExecuteTest.respond_to? :share_should
         end
         
         should "set execute_result to execute block return value" do
@@ -64,5 +64,5 @@ class TestShouldaExecute < Test::Unit::TestCase
         end
       end
     end
-  end
+  end  
 end

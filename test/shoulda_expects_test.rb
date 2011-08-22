@@ -1,6 +1,6 @@
 require "helper"
 
-class TestShouldaExpects < Test::Unit::TestCase
+class ShouldaExpectsTest < Test::Unit::TestCase
   context ".expects" do
     setup do
       @object = mock

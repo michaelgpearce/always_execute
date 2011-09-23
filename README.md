@@ -100,6 +100,66 @@ When using always execute, you'll notice it's a lot DRYer, but more importantly 
   end
 ```
     
+## Other Features
+
+### execute_result
+
+Often in unit tests, you are testing the returned value of a single function.  For connivence, the returned value of an execute block is stored in a variable called `@execute_result`.
+
+```ruby
+  class DvdPlayerTest
+    context "#current_dvd" do
+      setup do
+        @dvd_player = DvdPlayer.new
+      end
+
+      execute do
+        @dvd_player.current_dvd
+      end
+
+      context "without any dvd in the player" do
+        should "return no dvd" do
+          assert_nil @execute_result
+        end
+      end
+
+      context "with a dvd in the player" do
+        setup do
+          @dvd = Dvd.new
+          @dvd_player.insert(@dvd)
+        end
+
+        should "return the dvd in the player" do
+          assert_equal @dvd, @execute_result
+        end
+      end
+    end
+  end
+```
+
+### expects
+
+Expectations belong in the **_assert_** step of testing, but because of the nature of mocha expectations they need to be called in your `setup` block.  The `expects` block allows you to set your expectations without needing to create a new context.
+
+```ruby
+  class DvdPlayerTest
+    context "#menu" do
+      setup do
+        @dvd_player = DvdPlayer.new
+      end
+
+      execute do
+        @dvd_player.menu
+      end
+
+      expects do
+        @dvd_player.expects(:display_menu_options)
+      end    
+    end
+  end
+```
+
+
 
 # Credits
 
@@ -110,4 +170,4 @@ Always Execute was developed by [Michael Pearce](http://github.com/michaelgpearc
 
 # Copyright
 
-Copyright (c) 2011 Michael Pearce, Bookrenter.com. See LICENSE.txt for further details.
+Copyright (c) 2011 Michael Pearce, Bookrenter.com. See LICENSE.txt for further details.``

@@ -12,8 +12,8 @@ Both RSpec and Shoulda by default provide blocks to encapsulate the **_setup_** 
 
 Checkout the examples:
 
-[RSpec Examples](doc/rspec_examples.md)
-[Shoulda Examples](doc/shoulda_examples.md)
+* [RSpec Examples](docs/rspec_examples.md)
+* [Shoulda Examples](docs/shoulda_examples.md)
 
 # Credits
 

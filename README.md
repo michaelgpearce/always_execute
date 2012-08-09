@@ -12,16 +12,16 @@ Both RSpec and Shoulda by default provide blocks to encapsulate the **_setup_** 
 
 Checkout the examples:
 
-* [RSpec Examples](docs/rspec_examples.md)
-* [Shoulda Examples](docs/shoulda_examples.md)
+* [RSpec Examples](blob/master/docs/rspec_examples.md)
+* [Shoulda Examples](blob/master/docs/shoulda_examples.md)
 
 # Credits
 
-Always Execute was developed by [Michael Pearce](http://github.com/michaelgpearce) in conjunction with [Philippe Huibonhoa](http://github.com/phuibonhoa) and is funded by [BookRenter.com](http://www.bookrenter.com "BookRenter.com"). 
+Always Execute was developed by [Michael Pearce](http://github.com/michaelgpearce) in conjunction with [Philippe Huibonhoa](http://github.com/phuibonhoa) and is funded by [Rafter](http://www.rafter.com "Rafter").
 
-![BookRenter.com Logo](http://assets0.bookrenter.com/images/header/bookrenter_logo.gif "BookRenter.com")
+![Rafter Logo](http://rafter-logos.s3.amazonaws.com/rafter_github_logo.png "Rafter")
 
 
 # Copyright
 
-Copyright (c) 2011 Michael Pearce, Bookrenter.com. See LICENSE.txt for further details.``
+Copyright (c) 2011-2012 Michael Pearce, Bookrenter.com. See LICENSE.txt for further details.``

@@ -1,5 +1,9 @@
-require 'shoulda'
+if defined?(Shoulda)
+  require 'shoulda_execute'
+  require 'shoulda_expects'
+end
 
-require 'shoulda_execute'
-require 'shoulda_expects'
-
+if defined?(RSpec)
+  require 'rspec_execute'
+  require 'rspec_expects'
+end

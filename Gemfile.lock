@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    always_execute (0.0.2)
+    always_execute (0.1.0)
       always_execute
       shoulda
 

@@ -24,4 +24,4 @@ Always Execute was developed by [Michael Pearce](http://github.com/michaelgpearc
 
 # Copyright
 
-Copyright (c) 2011-2012 Michael Pearce, Bookrenter.com. See LICENSE.txt for further details.``
+Copyright (c) 2011-2012 Michael Pearce, Bookrenter.com. See LICENSE.txt for further details.

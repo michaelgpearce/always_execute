@@ -55,7 +55,6 @@ class DvdPlayerTest
       @dvd_player.play(@dvd)
     end
 
-
     should "play movie" do
       assert @dvd_player.movie_playing?
     end

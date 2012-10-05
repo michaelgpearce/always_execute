@@ -12,5 +12,13 @@ require 'rspec/core/rake_task'
 desc "Run Rspecs"
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => [:test, :spec]
+task 'testversions' do
+  ENV['SHOULDA_VERSION'] = '2.11.3'
+  fail unless system "bundle update"
+  fail unless system "rake test"
+  ENV['SHOULDA_VERSION'] = '3.1.1'
+  fail unless system "bundle update"
+  fail unless system "rake test"
+end
 
+task :default => [:testversions, :spec]

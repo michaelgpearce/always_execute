@@ -19,7 +19,8 @@ class ShouldaExecuteTest < Test::Unit::TestCase
       
       context "without shared_should library" do
         setup do
-          Shoulda::Context.expects(:should_execute_shared_should_available?).at_least_once.returns(false)
+         klass = defined?(Shoulda::Context::Context) ? Shoulda::Context::Context : Shoulda::Context
+         klass.shoulda_execute_class.expects(:should_execute_shared_should_available?).at_least_once.returns(false)
         end
         
         should "set execute_result to execute block return value" do

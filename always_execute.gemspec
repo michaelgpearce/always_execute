@@ -19,9 +19,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency 'rspec', '~> 2.9.0'
-  s.add_development_dependency 'shoulda', '~> 2.11.3'
+  s.add_development_dependency('shoulda', ENV['SHOULDA_VERSION'] || "= 3.1.1") # Use SHOULDA_VERSION when testing different   
   s.add_development_dependency 'mocha', '~> 0'
   s.add_development_dependency 'minitest', '~> 2.12.1'
-  s.add_development_dependency 'shared_should', '~> 0.8.3'
+  s.add_development_dependency 'shared_should', '~> 0.9.0'
 end
 

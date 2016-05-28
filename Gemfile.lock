@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    always_execute (0.2.0)
+    always_execute (0.2.3)
 
 GEM
   remote: http://rubygems.org/
